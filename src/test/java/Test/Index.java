@@ -37,7 +37,6 @@ public class Index {
         loginPage.clickContinue();
         loginPage.enterPassword("Papa123#");
         loginPage.clickSignIn();
-
     }
 
     @Test(priority = 2)
@@ -77,5 +76,4 @@ public class Index {
         Thread.sleep(3000);
         driver.quit();
     }
-
 }

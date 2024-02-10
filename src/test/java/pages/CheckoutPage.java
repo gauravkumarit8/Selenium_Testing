@@ -21,7 +21,6 @@ public class CheckoutPage
     @FindBy(xpath = "//span[contains(text(),'Credit or debit card')]")
     WebElement cardElement;
 
-
     public void checkTextPage() {
         String chekcoutText = checkoutText.getText().toLowerCase();
         Assert.assertTrue(chekcoutText.equals("checkout"));
@@ -33,6 +32,5 @@ public class CheckoutPage
         Assert.assertTrue(text.contains("card"));
         System.out.println("card option is present");
         Thread.sleep(5000);
-
     }
 }

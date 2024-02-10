@@ -20,12 +20,10 @@ public class SelectedItem {
     @FindBy(css = "#quantity")
     WebElement dropdown;
 
-
     public SelectedItem(WebDriver d) {
         this.driver = d;
         PageFactory.initElements(driver, this);
     }
-
 
     public void buyTheItem() throws Exception {
         ArrayList<String> al = new ArrayList<>(driver.getWindowHandles());
